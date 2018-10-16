@@ -1,10 +1,16 @@
 import React, { Fragment, Component } from 'react';
 
 const iconStyle = {
-    padding: "1em",
+    padding: "5%",
     fontSize: "50px",
+    color: "#61dafb",
 }
 
+const textStyle = {
+    paddingLeft: "1em",
+    paddingRight: "1em",
+    paddingBottom: "1%",
+}
 
 class Dashboard extends Component {
 
@@ -15,9 +21,10 @@ class Dashboard extends Component {
               <div>
                 <h1>Hello, my name is Aaron Meade</h1>
                 <ul className="links">
-                    <li style={iconStyle}><a href="https://github.com/aaronmeade92" class="fa fa-github"></a></li>
-                    <li style={iconStyle}><a href="https://www.linkedin.com/in/aaron-meade/" class="fa fa-linkedin"></a></li>
+                    <li><a style={iconStyle} href="https://github.com/aaronmeade92" class="fa fa-github"></a></li>
+                    <li><a style={iconStyle} href="https://www.linkedin.com/in/aaron-meade/" class="fa fa-linkedin"></a></li>
                 </ul>
+                <p style={textStyle}> Welcome to my professional portfolio! <br/> Here you can find links to all of my social media platforms and some examples of what makes me a great frontend developer.</p>
               </div>
             </Fragment>
         )
