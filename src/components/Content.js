@@ -27,6 +27,10 @@ class Content extends Component {
 
             <h2><a style={projectLinks} href="https://github.com/code-commando/frontend">Code Commando</a></h2>
             <p style={projectsText}>'Code Commando' was the largest project I have been a part of, it was a combined effort of all the developers in my 401 JavaScript course at Code Fellows. My team's job was to build the entire frontend. I personally had input on all the pages and built the rosters and quiz pages.</p>
+
+            <h2><a style={projectLinks} href="https://star-wars-study.herokuapp.com/home">Star Wars Study</a></h2>
+            <img src="images\starwars-study.jpg" />
+            <p style={projectsText}>A basic React frontend built using the data provided through the Star Wars API.</p>
             </div>
             </div>
         </Fragment>
