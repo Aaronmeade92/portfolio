@@ -1,4 +1,5 @@
 import React, { Fragment, Component } from 'react';
+import Dropdown from './Dropdown';
 
 const iconStyle = {
     padding: "5%",
@@ -25,6 +26,7 @@ class Dashboard extends Component {
                     <li><a style={iconStyle} href="https://www.linkedin.com/in/aaron-meade/" class="fa fa-linkedin"></a></li>
                 </ul>
                 <p style={textStyle}> Welcome to my professional portfolio! <br/> Here you can find links to all of my social media platforms and some examples of what makes me a great frontend developer.</p>
+                < Dropdown />
               </div>
             </Fragment>
         )
