@@ -1,5 +1,5 @@
 import React, {Fragment,Component} from 'react';
-
+import starwarsstudy from '../images/starwars-study.jpg';
 
 const projects = {
     textAlign: "left",
@@ -14,6 +14,10 @@ const projectLinks = {
     color: "#61dafb",
 }
 
+const imageStyle = {
+    width: "35%",
+    
+}
 class Content extends Component {
 
 
@@ -30,6 +34,7 @@ class Content extends Component {
 
             <h2><a style={projectLinks} href="https://star-wars-study.herokuapp.com/home">Star Wars Study</a></h2>
             <p style={projectsText}>A basic React frontend built using the data provided through the Star Wars API.</p>
+            <img style={imageStyle} src={starwarsstudy}/>
             </div>
             </div>
         </Fragment>
