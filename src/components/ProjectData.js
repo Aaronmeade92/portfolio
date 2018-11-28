@@ -1,6 +1,7 @@
 import React, {Fragment,Component} from 'react';
 import starwarsstudy from '../images/starwars-study.jpg';
 import chewsit from '../images/chewsit.jpg';
+import NavBar from './NavBar';
 
 const projects = {
     textAlign: "left",
@@ -16,6 +17,7 @@ const projectsText = {
 
 const projectLinks = {
     color: "blue",
+    paddingLeft: '20%',
 }
 
 const imageStyle = {
@@ -28,6 +30,8 @@ class Content extends Component {
     render() {
         return ( 
         <Fragment>
+            <NavBar />
+
             <div style={projects}> 
             <div>
             <h2><a style={projectLinks} href="https://github.com/Chewsit/chewsit-client">Chews It</a></h2>
