@@ -12,7 +12,8 @@ import Icon from '@material-ui/core/Icon';
 
 const styles = theme => ({
     root: {
-        width: '80%'
+        width: '80%',
+        paddingBottom: '10%'
     },
     heading: {
         fontSize: theme.typography.pxToRem(15),
@@ -26,7 +27,8 @@ const styles = theme => ({
 });
 
 const pictureSize = {
-    width: '30%'
+    width: '30%',
+    paddingTop: '5em'
 }
 class About extends Component {
     state = {
