@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import NavBar from './NavBar.js';
+import PersonalPicture from '../images/personalPicture.jpg';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
@@ -24,6 +25,9 @@ const styles = theme => ({
     },
 });
 
+const pictureSize = {
+    width: '30%'
+}
 class About extends Component {
     state = {
         expanded: false,
@@ -44,6 +48,7 @@ class About extends Component {
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
             <NavBar />
             <div className={classes.root}>
+            <img style={pictureSize} src={PersonalPicture}/>
             <ExpansionPanel expanded={ expanded === 'panel1'} onChange={this.handleChange('panel1')}>
                 <ExpansionPanelSummary expandIcon={<Icon>keyboard_arrow_down</Icon>}>
                     <Typography className={classes.heading}>Hello!</Typography>
