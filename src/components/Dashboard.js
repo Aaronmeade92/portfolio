@@ -30,7 +30,12 @@ const buttonPosition = {
     bottom: '20%',
     }
 
+const linkStyle = {
+    textDecoration: 'none',
+    color: 'orange',
+}
 class Dashboard extends Component {
+
 
     render() {
         return(
@@ -38,7 +43,7 @@ class Dashboard extends Component {
             <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css"/>
               <div style={container}>
                 <img style={imgStyle} src={portfolioBackground}/>
-                <h1 style={textStyle}>Hello, my name is Aaron Meade</h1>
+                <h1 style={textStyle}>Hello, my name is <NavLink style={linkStyle} to='/about'>Aaron Meade</NavLink></h1>
               </div>
                 <NavLink style={buttonPosition} to='/projects'><button class='bttn-fill bttn-success'>Go To Projects</button></NavLink>
             </Fragment>
