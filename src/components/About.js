@@ -19,6 +19,7 @@ const styles = theme => ({
         fontSize: theme.typography.pxToRem(15),
         flexBasis: '33.33%',
         flexShrink: 0,
+        backgroundColor: 'blue'
     },
     secondaryHeading: {
         fontSize: theme.typography.pxToRem(15),
