@@ -11,27 +11,17 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import Icon from '@material-ui/core/Icon';
 
-    const projects = {
-        textAlign: "left",
-        padding: "5%"
-    }
-
     const projectsText = {
         textAlign: "center",
-        paddingLeft: '20%',
+        // paddingLeft: '20%',
         fontSize: '16px',
-        width: "60%"
+        // width: "60%"
     }
 
     const projectLinks = {
         color: "blue",
         paddingLeft: '20%',
-    }
-
-    const imageStyle = {
-        width: "25%",
-        paddingLeft: "35%",
-    }
+    };
 
 const styles = theme => ({
     root: {
@@ -42,7 +32,7 @@ const styles = theme => ({
         fontSize: theme.typography.pxToRem(15),
         flexBasis: '33.33%',
         flexShrink: 0,
-        backgroundColor: 'blue'
+        // backgroundColor: 'blue'
     },
     secondaryHeading: {
         fontSize: theme.typography.pxToRem(15),
@@ -51,8 +41,10 @@ const styles = theme => ({
 });
 
 const pictureSize = {
-    width: '30%',
-    paddingTop: '5em'
+    width: '40%',
+    padding: '2em',
+    float: 'left',
+    
 }
 class About extends Component {
     state = {
@@ -80,7 +72,8 @@ class About extends Component {
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <Typography>
-                        First off thanks for taking the time to look over my portfolio! As you can see my name is Aaron Meade and I am a full stack javascript developer. I graduated from the Code Fellows bootcamp out of Seatte, WA in September of 2018. I'm still fairly new to the world of code but have loved every minute of it. I have a genuine intellectual drive to learn more and more everyday. Feel free to reach out to me on any of my platforms that I have linked to my portfolio, I am always open to new and exciting opportunities  
+                        <h2><a style={projectLinks} href="https://star-wars-study.herokuapp.com/home">Star Wars API</a></h2>
+                        <p style={projectsText}><img style={pictureSize} src={starwarsstudy}/>A basic React frontend built using the data provided through the Star Wars API.</p>
                     </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
@@ -91,8 +84,8 @@ class About extends Component {
                 <ExpansionPanelDetails>
                     <Typography>
                         <h2><a style={projectLinks} href="https://github.com/Chewsit/chewsit-client">Chews It</a></h2>
-                        <p style={projectsText}>'Chews It' was an App that I had the priviledge to be a part of during my time at Code Fellows. 'Chews It' is designed to help the indecisive pick a meal for the night. 'Chews It' picks from preferences that the user is prompted to pick when they sign up for the app. It takes the three of the preferences and randomly selects a nearby restuarant. 'Chews It' utilizes Google Maps API and Yelp API .</p>
-                        <img style={imageStyle} src={chewsit}/>
+                        <p style={projectsText}><img style={pictureSize} src={chewsit}/>'Chews It' was an App that I had the priviledge to be a part of during my time at Code Fellows. 'Chews It' is designed to help the indecisive pick a meal for the night. 'Chews It' picks from preferences that the user is prompted to pick when they sign up for the app. It takes the three of the preferences and randomly selects a nearby restuarant. 'Chews It' utilizes Google Maps API and Yelp API .</p>
+
                     </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
@@ -102,7 +95,8 @@ class About extends Component {
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
                     <Typography>
-                        Whenever I am not coding, I really like to spend time with my friends and family. Nothing is more important to me than the people I have surrounded myself with over the years and I have made it my life's goal to take care of them.
+                        <h2><a style={projectLinks} href="https://github.com/code-commando/frontend">Code Commando</a></h2>
+                        <p style={projectsText}>Code Commando' was the largest project I have been a part of, it was a combined effort of all the developers in my 401 JavaScript course at Code Fellows. My team's job was to build the entire frontend. I personally had input on all the pages and built the rosters and quiz pages.</p>
                     </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
