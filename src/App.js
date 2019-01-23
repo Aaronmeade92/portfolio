@@ -1,8 +1,7 @@
 import React, { Fragment, Component } from 'react';
-import logo from './logo.svg';
 import Dashboard from './components/Dashboard.js';
 import './App.css';
-import ProjectData from './components/ProjectData';
+import Portfolio from './components/Portfolio';
 import { BrowserRouter, Route } from 'react-router-dom';
 import About from './components/About';
 
@@ -15,7 +14,7 @@ class App extends Component {
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <Route exact path='/' component={Dashboard}/>
-          <Route exact path='/projects' component={ProjectData}/>
+          <Route exact path='/projects' component={Portfolio}/>
           <Route exact path='/about' component={About}/>
         </header>
       </div>

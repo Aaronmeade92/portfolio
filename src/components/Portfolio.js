@@ -44,7 +44,12 @@ const pictureSize = {
     width: '40%',
     padding: '2em',
     float: 'left',
-    
+}
+
+const personalPictureSize = {
+    width: '20%',
+    padding: '4em',
+
 }
 class About extends Component {
     state = {
@@ -65,6 +70,7 @@ class About extends Component {
             <Fragment>
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
             <NavBar />
+            <img style={personalPictureSize} src={PersonalPicture}/>
             <div className={classes.root}>
             <ExpansionPanel expanded={ expanded === 'panel1'} onChange={this.handleChange('panel1')}>
                 <ExpansionPanelSummary expandIcon={<Icon>keyboard_arrow_down</Icon>}>
