@@ -5,12 +5,17 @@ import Portfolio from './components/Portfolio';
 import { BrowserRouter, Route } from 'react-router-dom';
 import About from './components/About';
 
+const background = {
+  backgroundColor: '#CCCCFF',
+  zIndex: '-2'
+}
+
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
       <Fragment>
-      <div className="App">
+      <div className="App" style={background}>
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <Route exact path='/' component={Dashboard}/>

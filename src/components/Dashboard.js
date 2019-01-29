@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 
 const imgStyle = {
-    zIndex: '-1',
+    zIndex: '',
     position: 'relative',
     width: '100%',
 }
