@@ -6,8 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import About from './components/About';
 
 const background = {
-  backgroundColor: '#CCCCFF',
-  zIndex: '-2'
+  backgroundColor: 'black',
 }
 
 class App extends Component {
@@ -15,7 +14,7 @@ class App extends Component {
     return (
       <BrowserRouter>
       <Fragment>
-      <div className="App" style={background}>
+      <div className="App">
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <Route exact path='/' component={Dashboard}/>

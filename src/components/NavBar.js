@@ -7,17 +7,16 @@ const navDiv = {
     top: '0',
     right: '0',
     width: '100%',
-    backgroundColor: '#333',
+    backgroundColor: 'black',
     overflow: 'hidden',
-    paddingRight: '35%',
-    opacity: '.7',
+    paddingRight: '40%',
 }
 
 const navItem = {
     display: 'inlineBlock',
     float: 'right',
     padding: '.3em',
-    textAlign: 'center',
+    textAlign: 'right',
     color: 'white',
 }
 
@@ -25,10 +24,17 @@ const active = {
     textDecoration: 'none',
 }
 
+const navLinks = {
+    paddingLeft: '.5em',
+    textAlign: 'right',
+    color: 'white',
+}
+
 class Navigation extends Component {
         render() {
             return(
             <div style={navDiv}>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
             <Navbar>
                 <Navbar.Header>
                     <Navbar.Brand>
@@ -36,11 +42,10 @@ class Navigation extends Component {
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Nav>
-        
                     <NavLink style={navItem} activeStyle={active} to='/projects'>Projects</NavLink>
-                    <NavLink style={navItem} activeStyle={active} to='/marketing'>Marketing</NavLink>
                     <NavLink style={navItem} activeStyle={active} to='/about'>About</NavLink>
-                    
+                    <a style={navLinks} href='https://github.com/aaronmeade92'><i class="fab fa-github"></i></a>
+                    <a style={navLinks} href='https://www.linkedin.com/in/aaron-meade/'><i class="fab fa-linkedin"></i></a>
                 </Nav>
             </Navbar>
             </div>

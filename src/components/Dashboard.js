@@ -1,6 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import NavBar from './NavBar.js';
-import portfolioBackground from '../images/portfolioBackground.jpg';
+import portfolioBackground from '../images/spaceBackground.jpg';
 import { NavLink } from 'react-router-dom';
 
 
@@ -11,28 +10,23 @@ const imgStyle = {
     width: '100%',
 }
 
-const container = {
-    position: 'relative',
-    textAlign: 'center',
-}
-
 const textStyle = {
     position: 'absolute',
-    top: '40%',
+    top: '2%',
     bottom: '50%',
-    paddingLeft: '25%',
+    left: '1%',
     color: 'white'
 }
 
 const buttonPosition = {
     position: 'absolute',
-    top: '70%',
-    bottom: '20%',
+    top: '30%',
+    left: '2%',
     }
 
 const linkStyle = {
     textDecoration: 'none',
-    color: 'orange',
+    color: 'red',
 }
 class Dashboard extends Component {
 
@@ -41,11 +35,9 @@ class Dashboard extends Component {
         return(
             <Fragment>
             <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css"/>
-              <div style={container}>
                 <img style={imgStyle} src={portfolioBackground}/>
                 <h1 style={textStyle}>Hello, my name is <NavLink style={linkStyle} to='/about'>Aaron Meade</NavLink></h1>
-              </div>
-                <NavLink style={buttonPosition} to='/projects'><button class='bttn-fill bttn-success'>Go To Projects</button></NavLink>
+                <NavLink style={buttonPosition} to='/projects'><button class='bttn-fill bttn-primary'>Go To Projects</button></NavLink>
             </Fragment>
         )
     }

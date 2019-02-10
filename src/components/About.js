@@ -9,12 +9,12 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 import Icon from '@material-ui/core/Icon';
 
-import PersonalPicture from '../images/personalPicture.jpg';
+import spaceDoggy from '../images/SpaceDoggy.jpg';
 
 const styles = theme => ({
     root: {
         width: '80%',
-        paddingBottom: '30%'
+        
     },
     heading: {
         fontSize: theme.typography.pxToRem(15),
@@ -28,32 +28,53 @@ const styles = theme => ({
     },
 });
 
-const pictureSize = {
-    width: '30%',
-    paddingTop: '5em'
-}
-class About extends Component {
-    state = {
-        expanded: false,
-    };
 
-    handleChange = panel => (event, expanded) => {
-        this.setState({
-            expanded: expanded ? panel : false,
-        });
-    };
+const dogPicture = {
+    width: '100%',
+    position: 'fixed',
+    left: '0',
+    bottom: '0',
+    zIndex: '-1',
+}
+
+const title = {
+    paddingTop: '10%',
+    color: 'white'
+}
+
+const body = {
+    width: '100%',
+    color: 'white',
+    borderStyle: 'solid',
+    borderColor: 'white',
+    backgroundColor: 'black',
+}
+
+const aboutText = {
+    paddingLeft: '2em',
+    paddingRight: '2em',
+}
+
+class About extends Component {
 
     render() {
-        const { classes } = this.props;
-        const { expanded } = this.state;
         
         return (
             <Fragment>
+            <img style={dogPicture} src={spaceDoggy}></img>
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
             <NavBar />
-            <div className={classes.root}>
-            <img style={pictureSize} src={PersonalPicture}/>
-            </div>
+                    <div style={title}>
+                        <h1>Front-end Developer</h1>
+                        <p>Always looking to learn.</p>
+                        <h3>
+                            Hi, I'm Aaron. Nice to meet you!
+                        </h3>
+                    </div>
+                    <div style={body}>
+                        <p style={aboutText}>My road to code did not start vert traditionally, I really hadn't even seen what code looked like until about 2016. I attended the CodeFellows Bootcamp in Seattle, WA and graduated with a certificate in FullStack JavaScript Development. My main focus recently has been building out smooth front-ends using React. </p>
+                    </div>
+
             </Fragment>
         );
     }
@@ -64,8 +85,3 @@ About.propTypes = {
 };
 
 export default withStyles(styles)(About);
-
-
-// First off thanks for taking the time to look over my portfolio! As you can see my name is Aaron Meade and I am a full stack javascript developer. I graduated from the Code Fellows bootcamp out of Seatte, WA in September of 2018. I'm still fairly new to the world of code but have loved every minute of it. I have a genuine intellectual drive to learn more and more everyday. Feel free to reach out to me on any of my platforms that I have linked to my portfolio, I am always open to new and exciting opportunities  
-// My journey as a developer is not a traditional one, I was only introduced to code in 2016 and before then it might as well have been the Matrix. Before I started on this path I had many different jobs that all showed me that I did not want to do them for the rest of my life. The one job that I really loved was being a high school football coach. I am a former athlete and loved to opportunity to help others grow and not only become better football players but better men. It really was a great leadership opportunity and an all around learning experience. I really look forward to taking all of my life's lessons and applying them to any future project that I am lucky enough to be a part of. 
-// Whenever I am not coding, I really like to spend time with my friends and family. Nothing is more important to me than the people I have surrounded myself with over the years and I have made it my life's goal to take care of them.
