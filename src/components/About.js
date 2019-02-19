@@ -53,6 +53,7 @@ const body = {
 const aboutText = {
     paddingLeft: '2em',
     paddingRight: '2em',
+    textAlign: 'left',
 }
 
 class About extends Component {
@@ -67,9 +68,6 @@ class About extends Component {
                     <div style={title}>
                         <h1>Front-end Developer</h1>
                         <p>Always looking to learn.</p>
-                        <h3>
-                            Hi, I'm Aaron. Nice to meet you!
-                        </h3>
                     </div>
                     <div style={body}>
                         <p style={aboutText}>My road to code did not start vert traditionally, I really hadn't even seen what code looked like until about 2016. I attended the CodeFellows Bootcamp in Seattle, WA and graduated with a certificate in FullStack JavaScript Development. My main focus recently has been building out smooth front-ends using React. </p>

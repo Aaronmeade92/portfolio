@@ -9,7 +9,7 @@ const navDiv = {
     width: '100%',
     backgroundColor: 'black',
     overflow: 'hidden',
-    paddingRight: '40%',
+    paddingRight: '5%',
 }
 
 const navItem = {
@@ -25,10 +25,13 @@ const active = {
 }
 
 const navLinks = {
-    paddingLeft: '.5em',
-    textAlign: 'right',
+    display: 'inlineBlock',
+    float: 'left',
+    paddingLeft: '1.8em',
+    textAlign: 'left',
     color: 'white',
 }
+
 
 class Navigation extends Component {
         render() {

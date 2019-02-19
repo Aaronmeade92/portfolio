@@ -14,13 +14,13 @@ import Typography from '@material-ui/core/Typography';
 import Icon from '@material-ui/core/Icon';
 
     const projectsText = {
-        textAlign: "center",
+        textAlign: "left",
         fontSize: '1em',
     }
 
     const projectLinks = {
-        color: "blue",
-        paddingLeft: '20%',
+        color: 'blue',
+        textAlign: 'center',
     };
 
     const styles = theme => ({
@@ -47,12 +47,20 @@ import Icon from '@material-ui/core/Icon';
 
     const parentDiv = {
         padding: '2em',
-        paddingLeft: '25%',
+        paddingLeft: '23%',
     }
 
     const imgStyle = {
         width: '100%',
         position: 'fixed',
+        zIndex: '-1',
+    }
+
+    const header = {
+        textAlign: 'center',
+        color: 'white',
+        padding: '3%',
+
     }
 class About extends Component {
     state = {
@@ -74,6 +82,9 @@ class About extends Component {
             <img style={imgStyle} src={spaceBackground}/>
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
             <Navigation />
+            <div style={header}>
+                <h3>Here you can find some of my previous projects. Always looking to build more and learn more.</h3>
+            </div>
             <div style={parentDiv}>
                 <div className={classes.root}>
                 <ExpansionPanel expanded={ expanded === 'panel1'} onChange={this.handleChange('panel1')}>
@@ -83,7 +94,7 @@ class About extends Component {
                     <ExpansionPanelDetails>
                         <Typography>
                             <h2><a style={projectLinks} href="https://star-wars-study.herokuapp.com/home">Star Wars API</a></h2>
-                            <p style={projectsText}><img style={pictureSize} src={starwarsstudy}/>A basic React frontend built using the data provided through the Star Wars API.</p>
+                            <p style={projectsText}><img style={pictureSize} src={starwarsstudy}/>A basic React frontend built using the data provided through the Star Wars API. You can find a list of all the characters, ships and films in the Star Wars universe. At least all the ones listed on the Star Wars API.</p>
                         </Typography>
                     </ExpansionPanelDetails>
                 </ExpansionPanel>
