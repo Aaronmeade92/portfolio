@@ -38,16 +38,23 @@ const dogPicture = {
 }
 
 const title = {
-    paddingTop: '10%',
+    padding: '10%',
     color: 'white'
 }
 
+const parentDiv = {
+    width: '90%'
+
+}
+
 const body = {
-    width: '100%',
+    float: 'left',
+    width: '25%',
     color: 'white',
     borderStyle: 'solid',
     borderColor: 'white',
     backgroundColor: 'black',
+    padding: '3%',
 }
 
 const aboutText = {
@@ -64,13 +71,22 @@ class About extends Component {
             <Fragment>
             <img style={dogPicture} src={spaceDoggy}></img>
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+            <a href="https://icons8.com/icon/46588/hamburger"></a>
             <NavBar />
                     <div style={title}>
                         <h1>Front-end Developer</h1>
                         <p>Always looking to learn.</p>
                     </div>
-                    <div style={body}>
-                        <p style={aboutText}>My road to code did not start vert traditionally, I really hadn't even seen what code looked like until about 2016. I attended the CodeFellows Bootcamp in Seattle, WA and graduated with a certificate in FullStack JavaScript Development. My main focus recently has been building out smooth front-ends using React. </p>
+                    <div style={parentDiv}>    
+                        <div style={body}>
+                            <p style={aboutText}>Background</p>
+                        </div>
+                        <div style={body}>
+                            <p style={aboutText}>Goals</p>
+                        </div>
+                        <div style={body}>
+                            <p style={aboutText}>Hobbies </p>
+                        </div>
                     </div>
 
             </Fragment>
