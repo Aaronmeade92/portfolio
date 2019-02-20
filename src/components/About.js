@@ -39,7 +39,8 @@ const dogPicture = {
 
 const title = {
     padding: '10%',
-    color: 'white'
+    color: 'white',
+    textAlign: 'center',
 }
 
 const parentDiv = {
@@ -63,6 +64,10 @@ const aboutText = {
     textAlign: 'left',
 }
 
+const bodyContent = {
+    textAlign: 'left',
+    fontSize: '16px'
+}
 class About extends Component {
 
     render() {
@@ -79,16 +84,20 @@ class About extends Component {
                     </div>
                     <div style={parentDiv}>    
                         <div style={body}>
-                            <p style={aboutText}>Background</p>
+                            <h3 style={aboutText}>Background</h3>
+                            <p style={bodyContent}>Former Highschool Football Coach. Line cook and manufacturing worker.</p>
                         </div>
                         <div style={body}>
-                            <p style={aboutText}>Goals</p>
+                            <h3 style={aboutText}>Goals</h3>
+                            <p></p>
                         </div>
                         <div style={body}>
-                            <p style={aboutText}>Hobbies </p>
+                            <h3 style={aboutText}>Hobbies </h3>
+                            <p>Amateur Chef.</p> 
+                            <p>Part-Time Crossfitter.</p>
+                            <p>Gamer.</p>
                         </div>
                     </div>
-
             </Fragment>
         );
     }
