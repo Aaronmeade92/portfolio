@@ -117,8 +117,8 @@ class About extends Component {
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
                         <Typography>
-                            <h2><a style={projectLinks} href="https://github.com/code-commando/frontend">Code Commando</a></h2>
-                            <p style={projectsText}>Code Commando' was the largest project I have been a part of, it was a combined effort of all the developers in my 401 JavaScript course at Code Fellows. My team's job was to build the entire frontend. I personally had input on all the pages and built the rosters and quiz pages.</p>
+                            <h2><a style={projectLinks} href="">Pokemon Search</a></h2>
+                            <p style={projectsText}>Pokemon Search was a fun side project that I built using the data provided by the PokeAPI. Some features of the app are a search bar that the user can use to search and find any and every pokemon in the API. The user will then be provided with that pokemon's type and stats.</p>
                         </Typography>
                     </ExpansionPanelDetails>
                 </ExpansionPanel>

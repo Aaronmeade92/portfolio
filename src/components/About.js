@@ -1,15 +1,12 @@
 import React, { Component, Fragment } from 'react';
 import NavBar from './NavBar.js';
-
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import Typography from '@material-ui/core/Typography';
-import Icon from '@material-ui/core/Icon';
+
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import spaceDoggy from '../images/SpaceDoggy.jpg';
+import personalPicture from '../images/personalPicture.jpg';
 
 const styles = theme => ({
     root: {
@@ -37,6 +34,12 @@ const dogPicture = {
     zIndex: '-1',
 }
 
+const picture = {
+    width: '20%',
+    float: 'left',
+    padding: '5%',
+}
+
 const title = {
     padding: '10%',
     color: 'white',
@@ -44,13 +47,12 @@ const title = {
 }
 
 const parentDiv = {
-    width: '90%'
-
+    width: '90%',
+    paddingBottom: '10%',
 }
 
 const body = {
     float: 'left',
-    width: '25%',
     color: 'white',
     borderStyle: 'solid',
     borderColor: 'white',
@@ -61,14 +63,13 @@ const body = {
 const aboutText = {
     paddingLeft: '2em',
     paddingRight: '2em',
+    paddingTop: '10%',
     textAlign: 'left',
+
 }
 
-const bodyContent = {
-    textAlign: 'left',
-    fontSize: '16px'
-}
 class About extends Component {
+
 
     render() {
         
@@ -82,20 +83,25 @@ class About extends Component {
                         <h1>Front-end Developer</h1>
                         <p>Always looking to learn.</p>
                     </div>
-                    <div style={parentDiv}>    
-                        <div style={body}>
-                            <h3 style={aboutText}>Background</h3>
-                            <p style={bodyContent}>Former Highschool Football Coach. Line cook and manufacturing worker.</p>
-                        </div>
-                        <div style={body}>
-                            <h3 style={aboutText}>Goals</h3>
-                            <p></p>
-                        </div>
-                        <div style={body}>
-                            <h3 style={aboutText}>Hobbies </h3>
-                            <p>Amateur Chef.</p> 
-                            <p>Part-Time Crossfitter.</p>
-                            <p>Gamer.</p>
+                    <Link
+                        activeClass="active"
+                        to="section1"
+                        spy={true}
+                        smooth={true}
+                        offset={70}
+                        duration= {500}
+                    ><button>click me</button></Link>
+                    <br/>
+                    <br/>
+                    <div className='section1' style={aboutText}>
+                        <div style={parentDiv}>
+                            <div style={body}>
+                                <img style={picture} src={personalPicture}></img>
+                                <h3>About Me</h3>
+                                <p>With a diverse background in jobs that have not meant a lot to me, I feel that I have really found a passion with Front-End development and am really driven to learn and become a better developer.</p>
+                                <h3>Skills</h3>
+                                <p>React. HTML. CSS. SQL. Node.Js. jQuery.</p>
+                            </div>
                         </div>
                     </div>
             </Fragment>
@@ -108,3 +114,23 @@ About.propTypes = {
 };
 
 export default withStyles(styles)(About);
+
+{/* <div style={parentDiv}>    
+    <div style={body}>
+        <h3 style={aboutText}>Hobbies </h3>
+        <p>Amateur Chef.</p> 
+        <p>Part-Time Crossfitter.</p>
+        <p>Gamer.</p>
+    </div>
+    <div style={body}>
+        <h3 style={aboutText}>Goals</h3>
+        <p>With a background mostly in manual labor I have worked hard to change my career path. Very motivated in my pursuit to better myself and embark a new adventure.</p>
+    </div>
+    <div style={body}>
+        <h3>Skills</h3>
+        <p>React</p>
+        <p>JavaScript</p>
+        <p>HTML</p>
+        <p>CSS</p>
+    </div>
+</div> */}
