@@ -2,7 +2,7 @@ import React, { Fragment, Component } from 'react';
 import portfolioBackground from '../images/spaceBackground.jpg';
 import { NavLink } from 'react-router-dom';
 
-
+// comments go here
 
 const imgStyle = {
     zIndex: '',
@@ -15,7 +15,7 @@ const textStyle = {
     top: '2%',
     bottom: '50%',
     left: '1%',
-    color: 'white'
+    color: 'white',
 }
 
 const buttonPosition = {
