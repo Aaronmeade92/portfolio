@@ -68,6 +68,9 @@ const aboutText = {
 
 }
 
+const buttonStyle = {
+
+}
 class About extends Component {
 
 
@@ -76,9 +79,10 @@ class About extends Component {
         return (
             <Fragment>
             <img style={dogPicture} src={spaceDoggy}></img>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-            <a href="https://icons8.com/icon/46588/hamburger"></a>
             <NavBar />
+            <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css"/>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
                     <div style={title}>
                         <h1>Front-end Developer</h1>
                         <p>Always looking to learn.</p>
@@ -89,8 +93,8 @@ class About extends Component {
                         spy={true}
                         smooth={true}
                         offset={70}
-                        duration= {500}
-                    ><button>click me</button></Link>
+                        duration= {600}
+                    ><button class="bttn-material-flat bttn-md" style={buttonStyle}><i class="fas fa-chevron-down"></i></button></Link>
                     <br/>
                     <br/>
                     <div className='section1' style={aboutText}>

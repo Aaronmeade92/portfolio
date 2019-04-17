@@ -25,7 +25,7 @@ class App extends Component {
       <Fragment>
       <div className={classes.root}>
         <header className="App-header">
-          <Route exact path='/home' component={Dashboard}/>
+          <Route exact path='/' component={Dashboard}/>
           <Route exact path='/projects' component={Portfolio}/>
           <Route exact path='/about' component={About}/>
         </header>
