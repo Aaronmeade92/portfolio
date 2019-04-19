@@ -48,7 +48,7 @@ const title = {
 
 const parentDiv = {
     width: '90%',
-    paddingBottom: '10%',
+    paddingBottom: '20%',
 }
 
 const body = {
@@ -63,7 +63,8 @@ const body = {
 const aboutText = {
     paddingLeft: '2em',
     paddingRight: '2em',
-    paddingTop: '10%',
+    paddingTop: '20%',
+    paddingBottom: '10%',
     textAlign: 'left',
 
 }
@@ -92,11 +93,12 @@ class About extends Component {
                         to="section1"
                         spy={true}
                         smooth={true}
-                        offset={70}
+                        offset={100}
                         duration= {600}
-                    ><button class="bttn-material-flat bttn-md" style={buttonStyle}><i class="fas fa-chevron-down"></i></button></Link>
-                    <br/>
-                    <br/>
+                    >
+                    <button class="bttn-material-flat bttn-md" style={buttonStyle}><i class="fas fa-chevron-down"></i></button>
+                    </Link>
+                    
                     <div className='section1' style={aboutText}>
                         <div style={parentDiv}>
                             <div style={body}>

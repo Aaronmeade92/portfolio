@@ -3,7 +3,9 @@ import Navigation from './NavBar.js';
 
 import starwarsstudy from '../images/starwars-study.jpg';
 import chewsit from '../images/chewsit.jpg';
+import pokemonScreen from '../images/pokemonScreenshot.jpg';
 import spaceBackground from '../images/plainSpace.jpg';
+
 
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -41,12 +43,12 @@ import Icon from '@material-ui/core/Icon';
 
     const pictureSize = {
         width: '30%',
-        padding: '2em',
+        padding: '5%',
         float: 'left',
     }
 
     const parentDiv = {
-        padding: '2em',
+        padding: '5%',
         paddingLeft: '23%',
     }
 
@@ -83,7 +85,7 @@ class About extends Component {
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
             <Navigation />
             <div style={header}>
-                <h3>Here you can find some of my previous projects. Always looking to build more and learn more.</h3>
+                <h3>Here you can find some of my previous projects.</h3>
             </div>
             <div style={parentDiv}>
                 <div className={classes.root}>
@@ -113,17 +115,19 @@ class About extends Component {
                 </ExpansionPanel>
                 <ExpansionPanel expanded={ expanded === 'panel3'} onChange={this.handleChange('panel3')}>
                     <ExpansionPanelSummary expandIcon={<Icon>keyboard_arrow_down</Icon>}>
-                        <Typography className={classes.heading}>Code Commando</Typography>
+                        <Typography className={classes.heading}>Pokemon Search</Typography>
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
                         <Typography>
                             <h2><a style={projectLinks} href="">Pokemon Search</a></h2>
+                            <img style={pictureSize} src={pokemonScreen} />
                             <p style={projectsText}>Pokemon Search was a fun side project that I built using the data provided by the PokeAPI. Some features of the app are a search bar that the user can use to search and find any and every pokemon in the API. The user will then be provided with that pokemon's type and stats.</p>
                         </Typography>
                     </ExpansionPanelDetails>
                 </ExpansionPanel>
                 </div>
             </div>
+            
             </Fragment>
         );
     }
