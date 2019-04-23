@@ -119,7 +119,7 @@ class About extends Component {
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
                         <Typography>
-                            <h2><a style={projectLinks} href="">Pokemon Search</a></h2>
+                            <h2><a style={projectLinks} href="https://search-pokemon.herokuapp.com/">Pokemon Search</a></h2>
                             <img style={pictureSize} src={pokemonScreen} />
                             <p style={projectsText}>Pokemon Search was a fun side project that I built using the data provided by the PokeAPI. Some features of the app are a search bar that the user can use to search and find any and every pokemon in the API. The user will then be provided with that pokemon's type and stats.</p>
                         </Typography>
