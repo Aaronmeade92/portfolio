@@ -46,7 +46,7 @@ class Navigation extends Component {
                     <Nav>
                         <NavLink style={navItem} activeStyle={active} to='/projects'>Projects</NavLink>
                         <NavLink style={navItem} activeStyle={active} to='/about'>About</NavLink>
-                        <NavLink style={navItem} activeStyle={active} to='/home'>Home</NavLink>
+                        <NavLink style={navItem} activeStyle={active} to='/'>Home</NavLink>
                         <a style={navLinks} href='https://github.com/aaronmeade92'><i class="fab fa-github"></i></a>
                         <a style={navLinks} href='https://www.linkedin.com/in/aaron-meade/'><i class="fab fa-linkedin"></i></a>
                     </Nav>
